@@ -49,6 +49,7 @@ TESTS=  selftest_receive_watchdog.sh \
 	selftest_receive_usage.sh \
 	basic.sh \
 	basic-realistic.sh \
+	session-callbacks.sh \
 	receiver-abort.sh \
 	long-msg.sh \
 	oversize-msg-abort-errmsg.sh \
@@ -78,6 +79,8 @@ EXTRA_DIST=$(TESTS) \
 	set-envvars.in \
 	dummyclient.py \
 	dummyserver.py \
+	invalid-open.py \
+	session-callbacks.sh \
 	test-framework.sh \
 	receive.c \
 	send.c \
@@ -95,4 +98,3 @@ EXTRA_DIST=$(TESTS) \
 	tls-certs/ossl-server-cert.pem \
 	tls-certs/ossl-server-key.pem \
 	tls-certs/ossl-server-certchain.pem
-
